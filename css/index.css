@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Safari */
+  outline-style: none;
+  list-style-type: none;
+}
+.all {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.all ul{
+}
+.all ul li {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #000;
+  margin-left: -1px;
+  margin-top: -1px;
+  float: left;
+}
+.pai {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  transition: all ease-in-out 400ms;
+  cursor: pointer;
+}
+.card__side {
+  transition: all .8s ease;
+  color: white;
+  /*font-size: 2rem;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*height: 25rem;*/
+  /*width: 100%;*/
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+
+}
+.back {
+  width: 100%;
+  transform: rotateY(180deg);
+
+}
+/*.showBg {*/
+/*  transform: rotateY(-180deg) !important;*/
+/*}*/
+/*.showPrize {*/
+/*  transform: rotateY(0deg) !important;*/
+/*}*/
